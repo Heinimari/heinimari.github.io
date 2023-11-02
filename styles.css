@@ -3,24 +3,43 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
     text-align: center;
+    background-color: rgb(186, 198, 255);
+ }
+
+ .main{  
+  margin-left: 22%;
+  margin-right: 10%;
  }
 
  h1 {
-  font-family: 'Pacifico';
-  text-shadow: 1px 1px;
-  color: rgb(122, 121, 120);
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(19, 19, 19);
+  font-size: 30px;
 }
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(29, 29, 44);
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(29, 29, 44);
+  font-size: 20px;
+}
+
+.left{
+  text-align: left;
+}
+
 img	{
   max-width:300px;
   width:100%}
   
-.img_f {
+.img_left {
     float:left;
-    padding: 10px;
-  }
-  
-
- /* LOMAKKE */
+    padding: 12px;
+  } 
 
  .lomake  {
   background-color: lightgray;
@@ -29,40 +48,32 @@ img	{
   border-radius: 10%;
 }
 
- /* NAVIVALIKKO VASEN*/
- .navi{
-  float: left;
-  width: 30%;   
- }
- .navi > div { 
-  margin: 10px;       
-}     
- .main{  
-  margin-left: 32%;
-  margin-right: 10%;
- }
-
- /* NÄYTÖN MUKAUTUMINEN KOKOON */
-
-@media only screen and (max-width:420px) {
-body{
-  background-color:lightgreen;
-}
-  a {
-    font-size: x-small;
-  }
+ a {
+  background-color: transparent;
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 421px) and
-(max-width: 1024px){
-body{
-  background-color: lightyellow}
+.linkki{
+  float:left;
+  color:blue;
 }
 
-@media only screen and (min-width:1024px){
-body {
-  background-color:rgb(246, 240, 240, 0.936);
-} 
+.linkki:hover{
+  color:rgb(50, 30, 125);
+}
+
+.inline{
+  display: inline;
+}
+
+button{
+  color:white;
+  background-color: black;
+}
+
+button:hover{
+  color:blue;
+  background-color: white;
 }
   
 /* TAULUKKO */
@@ -74,59 +85,17 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #7f0404;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #8b5959;
 }
 
-/* PAINIKE */
 
-.button-72 {
-  width:100%;
-  align-items: center;
-  background-color: initial;
-  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
-  border-radius: 42px;
-  border-width: 0;
-  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: flex;
-  font-family: Quicksand,sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  justify-content: center;
-  letter-spacing: .04em;
-  line-height: 16px;
-  margin: 0;
-  padding: 18px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
-  user-select: none;
-  -webkit-user-select: none;
- }
 
 /* LINKKI */
 
-a {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-/* a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
 
-a:hover {
-  color:pink;
-  background-color: transparent;
-  text-decoration: underline;
-}
-*/
